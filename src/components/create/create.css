@@ -1,0 +1,50 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.create {
+    max-width: 650px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .create label {
+    text-align: left;
+    display: block;
+  }
+  .create h2 {
+    font-size: 20px;
+    border: 1px solid gray;
+    border-block-width: 3px;
+    font-weight: 400;
+    background-color: rgb(245, 243, 239);
+    padding: 9px;
+    margin: 15px;
+    color: #f1356d;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  .create input, .create textarea  {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .create textarea{
+     min-height: 220px;
+  }
+  .create button {
+    background: #76d252;
+    color: #fff;
+    border: 0;
+    padding: 12px;
+    font-size: large;
+    border-radius: 8px;
+    
+    cursor: pointer;
+  }
