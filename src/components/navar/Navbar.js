@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./navbar.css";
-
 const Navbar = () => {
    
   const { user, isAuthenticated,logout,loginWithRedirect } = useAuth0();
@@ -9,7 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1><span className="blog-logo"><i class="fa-brands fa-blogger-b fa-beat"></i></span>The Ashish Blog</h1>
+     <div className="img-logo">
+     <img  src="./assets/sunilChhetri.jpeg" alt="logo"/>
+      <h1>InsideFootballWorld</h1>
+      </div>
       <div className="links">
        <div>
         <Link to="/"
@@ -30,15 +32,16 @@ const Navbar = () => {
         }}>New Blog</Link>
         </div>
         <div>
-          {isAuthenticated ? (<p>{user.name}</p>) : (<p></p>)}
+          {isAuthenticated ? (<p className="user-name">{user.name}</p>) : (<p></p>)}
         </div>
-        <div c
+        <div 
            className="login-button"
         >
           {isAuthenticated ? (
-            <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Loout</button>
+            <div>
+            <button className="log-out-button" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</button> </div>
           ) : (
-        <button onClick={() => loginWithRedirect()}>Log In</button>
+        <button className="log-in-button" onClick={() => loginWithRedirect()}>Log In</button>
    ) }
         </div>
        { /* <Link to="/login" style={{ 

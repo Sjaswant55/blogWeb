@@ -13,6 +13,8 @@
       text="text/CSS"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap"
       rel="stylesheet"
@@ -20,10 +22,53 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <title>Social App</title>
+    <title>Foot-on-field</title>
+    <style media="screen">
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    } 
+    
+    </style >
+    <style>
+    
+      
+      #myBtn {
+        position: fixed;
+        bottom: 1px;
+        z-index: 99;
+        color: black;
+        background-color: white;
+        font-size: 35px;
+        border-radius: 13px;
+        cursor: pointer;
+        max-width: 80px;
+      }
+      
+      
+      </style>
   </head>
   <body>
     <div id="root"></div>
-     
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
   </body>
 </html>

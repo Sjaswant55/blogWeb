@@ -1,4 +1,5 @@
 import BlogList from "./components/blogPreview/BlogList";
+import Footer from "./components/footer/Footer";
 import useFetch from "./useFetch";
 
 const Home = () => {
@@ -7,8 +8,9 @@ const Home = () => {
   return (
     <div className="home">
       { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
+      { isPending && <span className="loading"></span> }
       { blogs && <BlogList blogs={blogs} /> }
+      {blogs && <Footer />}
     </div>
   );
 }

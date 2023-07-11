@@ -1,18 +1,28 @@
 .navbar {
-    padding: 20px;
+    top: 0;
+    padding: 16px;
     display: flex;
+    width: 100%;
     align-items: center;
-    background-color: #333;
-    margin: 0 auto;
+    background-color: hsla(0, 19%, 15%, 0.5) ;
+    margin: 0 ;
+    color: rgb(21, 14, 1);
+    position: fixed;
     border-bottom: 1px solid #f2f2f2;
   }
   
-  .navbar:hover{
-    /* transform: scale(1.005); */
-    background-color: #333;
-  }
+ 
+ 
   .navbar h1 {
-    color: hsl(157, 16%, 84%);
+    color: #fd3604;
+    font-size: 33px;
+    background-color: rgb(150, 141, 141);
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .navbar h1:hover{
+    transform: scale(1.01);
   }
   .navbar .links {
     margin-left: auto;
@@ -29,5 +39,38 @@
   .links{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
+
+  .log-in-button, .log-out-button{
+    border-radius: 10px;
+    text-align: center;
+    height: 34px;
+    padding: 5px;
+    margin-left:  12px;
+    margin-right: 50px;
+    max-width: 80px;
+  }
+
+  .user-name{
+    color: white;
+    margin: 0 8px;
+  }
+
+.img-logo{
+  display: flex;
+}
+
+.img-logo img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: fill;
+  transform: scale(1.1);
+  margin-left: 25px;
+}
+
+.img-logo img:hover{
+  transform: scale(1.6);
+}

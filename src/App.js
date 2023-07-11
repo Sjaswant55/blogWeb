@@ -3,10 +3,11 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './components/create/Create';
 import BlogPreviw from './components/blogPreview/BlogPreview';
-import NotFound from './NotFound';
+import NotFound from './components/notFound/NotFound';
 import Login from "./components/login/Login";
+import UserEdit from './components/create/UserEdit';
 
-function App() {
+const  App =() => {
   return (
     <>
     
@@ -27,6 +28,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <Route path="/userEdit/:id">
+              <UserEdit />
+            </Route>
             <Route path="*">
               <NotFound />
             </Route>
@@ -34,6 +38,7 @@ function App() {
         </div>
       </div>
     </Router>
+
     </>
   );
 }

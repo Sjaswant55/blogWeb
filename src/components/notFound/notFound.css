@@ -1,0 +1,9 @@
+.not-found{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.not-found img{
+    min-width: 100%;
+    min-height: 100%;
+}
