@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./create.css";
-import { useHistory } from "react-router-dom";
 
 const UserEdit = () => {
   const [useredit, setUserEdit] = useState({
@@ -11,7 +10,6 @@ const UserEdit = () => {
   });
   
   const {id} = useParams();
-  const history=useHistory();
   
    useEffect( () => {  
     const editUserId = async() =>{
