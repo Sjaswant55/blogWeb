@@ -10,7 +10,6 @@ import UserEdit from './components/create/UserEdit';
 const  App =() => {
   return (
     <>
-    
     <Router>
       <div className="App">
         <Navbar />

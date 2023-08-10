@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./navbar.css";
 const Navbar = () => {
-   
   const { user, isAuthenticated,logout,loginWithRedirect } = useAuth0();
-
 
   return (
     <nav className="navbar">

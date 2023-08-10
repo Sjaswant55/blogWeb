@@ -4,7 +4,7 @@
     display: flex;
     width: 100%;
     align-items: center;
-    background-color: hsla(0, 19%, 15%, 0.5) ;
+    background-color: hsla(0, 3%, 93%, 0.5) ;
     margin: 0 ;
     color: rgb(21, 14, 1);
     position: fixed;
@@ -14,9 +14,8 @@
  
  
   .navbar h1 {
-    color: #fd3604;
+    color: rgb(20, 120, 20);
     font-size: 33px;
-    background-color: rgb(150, 141, 141);
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
